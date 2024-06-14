@@ -47,6 +47,13 @@ export default defineConfig(({ mode }) => {
 				key: readFileSync(resolve(__dirname, env.SSL_KEY_PATH)),
 				cert: readFileSync(resolve(__dirname, env.SSL_CERT_PATH))
 			}
+		},
+		css: {
+			modules: {
+				generateScopedName: isDev
+					? '[local]_[hash:base64:5]'
+					: '[hash:base64:5]'
+			}
 		}
 	};
 });

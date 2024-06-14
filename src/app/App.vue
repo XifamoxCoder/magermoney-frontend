@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { AppMain } from '@/shared/ui/components';
+</script>
+
 <template>
-	<router-view />
+	<app-main>
+		<router-view />
+	</app-main>
 </template>
