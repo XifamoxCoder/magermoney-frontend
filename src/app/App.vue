@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { AppMain } from '@/shared/ui/components';
+
+import { AppLayoutProvider } from './layouts';
 </script>
 
 <template>
 	<app-main>
-		<router-view />
+		<app-layout-provider />
 	</app-main>
 </template>
