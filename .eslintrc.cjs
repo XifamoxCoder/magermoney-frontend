@@ -18,6 +18,6 @@ module.exports = {
 		'no-undef': 'off',
 		'simple-import-sort/imports': 'error',
 		'@typescript-eslint/no-namespace': 'off',
-		'@typescript-eslint/np-explicit-any': 'off'
+		'@typescript-eslint/no-explicit-any': 'off'
 	}
 };
