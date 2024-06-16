@@ -3,7 +3,7 @@ import { IFetchState } from '@/shared/domain';
 import { RequestReturnError } from '@/shared/types/api';
 import { CRUDModel } from '@/shared/types/models';
 
-export namespace NUser {
+export namespace NUsers {
 	export const API_NAMESPACE = 'users';
 
 	export interface IUser extends UserEntity {}
