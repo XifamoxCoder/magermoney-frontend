@@ -5,6 +5,5 @@ export default {
 </script>
 
 <template>
-	<h1>Login Layout</h1>
 	<slot />
 </template>
