@@ -19,6 +19,12 @@ const routes: RouteRecordRaw[] = [
 		name: AppRoutes.Login,
 		meta: { layout: 'Login', middleware: loginMiddleware },
 		component: () => import('@/modules/auth/ui/views/LoginView/LoginView.vue')
+	},
+	{
+		path: '/settings',
+		name: AppRoutes.Settings,
+		component: () =>
+			import('@/modules/settings/ui/views/SettingsView/SettingsView.vue')
 	}
 ];
 

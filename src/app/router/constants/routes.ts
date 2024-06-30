@@ -1,4 +1,5 @@
 export enum AppRoutes {
 	Dashboard = 'Dashboard',
-	Login = 'Login'
+	Login = 'Login',
+	Settings = 'Settings'
 }

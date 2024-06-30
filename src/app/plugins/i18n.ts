@@ -1,3 +1,4 @@
+import { useStorage } from '@vueuse/core';
 import { createI18n } from 'vue-i18n';
 
 import { appConfig } from '../config';
@@ -9,9 +10,13 @@ export const langFiles: Record<string, any> = {
 	'ru-RU': ruRU
 };
 
+const storage = useStorage('settings', {
+	lang: appConfig.defaultLanguage
+});
+
 export const i18n = createI18n({
 	legacy: false,
-	locale: appConfig.defaultLanguage,
+	locale: unref(storage).lang,
 	fallbackLocale: appConfig.fallbackLanguage,
 	messages: langFiles
 });

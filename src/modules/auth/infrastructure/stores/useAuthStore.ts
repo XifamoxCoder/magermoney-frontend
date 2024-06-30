@@ -6,6 +6,9 @@ import { useStoreAdapter } from '@/shared/infrastructure/adapters';
 import { NAuth } from '../../domain/Domain';
 
 const authStore = defineStore('auth', {
+	persist: {
+		paths: ['accessToken', 'expireDate', 'isAuthorization', 'user']
+	},
 	state: (): NAuth.IState => ({
 		...fetchStateInitialState,
 		isAuthorization: false,
