@@ -50,6 +50,9 @@ const authStore = defineStore('auth', {
 		},
 		resetUser() {
 			this.user = null;
+		},
+		resetError() {
+			this.error = null;
 		}
 	}
 });
